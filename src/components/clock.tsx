@@ -71,7 +71,9 @@ const Clock = () => {
           {/* Här hade de ju varit beydligt enklare med bara stockholm.city */}
           {cities.stockholm.whichCity}
         </h1>
-        <h1 className="clock">{clockiswhatTime}</h1>
+        <h1 style={{ color: cities.stockholm.whichColor }} className="clock">
+          {clockiswhatTime}
+        </h1>
       </section>
       <section className="container">
         {/* Här hade de ju varit beydligt enklare med bara newyork.color */}
@@ -79,7 +81,9 @@ const Clock = () => {
           {/* Här hade de ju varit beydligt enklare med bara newyork.city */}
           {cities.newyork.whichCity}
         </h1>
-        <h1 className="clock">{clockiswhatTimeNewYork}</h1>
+        <h1 style={{ color: cities.newyork.whichColor }} className="clock">
+          {clockiswhatTimeNewYork}
+        </h1>
       </section>
     </>
   );
